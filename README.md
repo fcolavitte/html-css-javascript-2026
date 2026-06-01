@@ -7,9 +7,9 @@
 
 | Campo | Dato |
 |-------|------|
-| **Nombre y Apellido** | |
-| **Legajo** | |
-| **Correo electrónico** | |
+| **Nombre y Apellido** | Facundo Colavitte |
+| **Legajo** | 36868 |
+| **Correo electrónico** | facundocolavitte@gmail.com |
 
 ---
 
