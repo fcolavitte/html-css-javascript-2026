@@ -15,7 +15,6 @@ body{
 	"quote"
 	"cards"
 	"footer";
-	grid-template-columns: 2fr 1fr;
 	gap: 10px;
 	background: var(--color-fondo);
 	margin: 0;
@@ -43,7 +42,7 @@ q{
 .contenedor-cards{
 	grid-area: cards;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(1, 1fr);
 	gap: 10px;
 }
 
@@ -93,6 +92,9 @@ a{
 }
 
 @media (min-width: 640px) {
+  .contenedor-cards{
+	grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -103,6 +105,10 @@ a{
 	"quote quote"
 	"cards cards"
 	"footer footer";
+	grid-template-columns: 2fr 1fr;
+  }
+  .contenedor-cards{
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
