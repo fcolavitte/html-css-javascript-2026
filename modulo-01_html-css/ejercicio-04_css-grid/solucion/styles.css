@@ -7,6 +7,21 @@ body{
 	"quote quote"
 	"cards cards"
 	"footer footer";
+	grid-template-columns: 2fr 1fr;
+	gap: 10px;
+}
+
+header{grid-area: header;}
+
+article{
+	grid-area: main-content;
+	grid-row: span 2;
+	background:red
+}
+
+aside{
+	grid-area: sidebar;
+	background:blue
 }
 
 header{
@@ -16,7 +31,6 @@ header{
 	top: 0;
 	background: var(--color-primario);
 	z-index: 2;
-	grid-area: header;
 }
 
 img.logo{
