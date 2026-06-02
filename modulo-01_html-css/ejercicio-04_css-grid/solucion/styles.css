@@ -85,3 +85,7 @@ a{
 	text-decoration: none;
 	color: var(--color-texto);
 }
+
+#de-interes{
+	grid-column: span 2;
+}
