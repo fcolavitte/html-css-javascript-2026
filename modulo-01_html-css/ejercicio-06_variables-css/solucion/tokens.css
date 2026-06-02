@@ -1,4 +1,4 @@
-
+/* TP-CHECK: 1.6 | Colavitte-Facundo | sin variables CSS este ejercicio sería imposible porque: no se tomaría de forma automática los cambios en donde correspondería y se necesitaría un JS extenso para modificar el estilo de cada elemento por separado cada vez que se cambia el tema. */
 
 :root, [data-theme="light"]{
   --color-primario: #bbb;

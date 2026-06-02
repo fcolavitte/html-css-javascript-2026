@@ -11,3 +11,5 @@ toggleButton.addEventListener("click", () => {
   console.log(targetTheme);
   localStorage.setItem("theme", targetTheme)
 });
+
+// localStorage sirve para: Almacenar (leer/escribir) variables/estructuras tipo clave-valor en forma local en la computadora y así poder guardar configuraciones de todo tipo incluso habiendo cerrado la pestaña. En este caso lo usé para guardar el tema seleccionado.
