@@ -8,7 +8,6 @@ toggleButton.addEventListener("click", () => {
   
   // Update the root attribute
   document.documentElement.setAttribute("data-theme", targetTheme);
-  console.log(targetTheme);
   localStorage.setItem("theme", targetTheme)
 });
 
