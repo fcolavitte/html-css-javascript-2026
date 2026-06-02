@@ -13,25 +13,34 @@
 #color-secundario::marker{color:var(--color-secundario);}
 #color-primario::marker{color:var(--color-primario);}
 
-#button-primario{
+.button-primario{
 	color:var(--color-texto);
 	box-shadow: var(--shadow-md);
 	background: var(--color-primario);
 	border-radius: var(--radius-lg);
 }
-#button-secundario{
+.button-secundario{
 	color:var(--color-texto-suave);
 	box-shadow: var(--shadow-sm);
 	background: var(--color-secundario);
 	border-radius: var(--radius-md);
 }
-#button-outlined{
+.button-outlined{
 	color:var(--color-texto);
 	background: var(--color-fondo);
 	border-radius: var(--radius-sm);
 }
-#button-deshabilitado{
+.button-deshabilitado{
 	color:var(--color-fondo);
 	background: var(--color-secundario);
 	border-radius: var(--radius-md);
+}
+
+.tarjeta{
+	padding: var(--padding-md);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-md);
+	background: var(--color-secundario);
+	width: var(--width-tarjeta);
+	text-align: var(--text-align-tarjeta);
 }

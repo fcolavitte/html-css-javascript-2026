@@ -25,6 +25,9 @@
   --shadow-md: 0 4px 8px rgba(var(--color-acento), 0.3);
   --transition-rapida: all 0.4s;
   --transition-normal: all 1s;
+  --padding-md: 20px;
+  --width-tarjeta: 250px;
+  --text-align-tarjeta: center;
 }
 
 [data-theme="dark"]{
@@ -52,4 +55,7 @@
   --shadow-md: 0 4px 8px rgba(var(--color-acento), 0.3);
   --transition-rapida: all 0.4s;
   --transition-normal: all 1s;
+  --padding-md: 20px;
+  --width-tarjeta: 250px;
+  --text-align-tarjeta: center;
 }
