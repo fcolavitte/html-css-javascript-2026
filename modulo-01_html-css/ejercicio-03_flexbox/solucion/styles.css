@@ -63,11 +63,16 @@ section.tarjeta{
 	background: #ccc;
 	display: flex;
 	flex-direction:column;
-	justify-content: space-between
+	justify-content: space-between;
+	align-items: center; 
 }
 
 section img{
 	background:red;
 	width:50%;
 	aspect-ratio:1;
+}
+
+section button{
+	width: 50%;
 }
