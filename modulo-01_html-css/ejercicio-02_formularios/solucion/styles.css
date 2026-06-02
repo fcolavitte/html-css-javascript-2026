@@ -3,3 +3,11 @@
 .asterisco{
 	color: red;
 }
+
+input:invalid {
+  background-color: #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
