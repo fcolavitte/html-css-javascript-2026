@@ -44,3 +44,10 @@ li button:focus-visible{
 	outline: 5px solid red;
 	background:#ffa;
 }
+
+article .contenedor-tarjetas{
+	display: flex;
+}
+
+section .tarjeta{
+}
