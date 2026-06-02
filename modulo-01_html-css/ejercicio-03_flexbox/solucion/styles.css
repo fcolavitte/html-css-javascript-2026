@@ -1,0 +1,19 @@
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+img.logo{
+	width:100px;
+	height:auto;
+}
+
+ul.menu{
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+}
+
+li, a{
+	text-decoration: none;
+}
