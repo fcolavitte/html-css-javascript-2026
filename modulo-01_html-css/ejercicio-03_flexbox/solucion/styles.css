@@ -27,3 +27,20 @@ li, a{
 	background: gray;
 	padding:10px 0;
 }
+
+li button{
+	padding:6px;
+}
+
+li button:hover{
+	background:#ffa;
+}
+
+li button.activo{
+	background:#88f;
+}
+
+li button:focus-visible{
+	outline: 5px solid red;
+	background:#ffa;
+}
