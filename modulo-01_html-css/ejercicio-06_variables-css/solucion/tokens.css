@@ -1,0 +1,55 @@
+
+
+:root, [data-theme="light"]{
+  --color-primario: #bbb;
+  --color-secundario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-superficie: #4e91fc;
+  --color-texto: #028;
+  --color-texto-suave: #24a;
+  --color-borde: #028;
+  --color-acento: #f22;
+  --fs-xs:11px;
+  --fs-sm:14px;
+  --fs-base:16px;
+  --fs-xl:22px;
+  --fs-2xl:28px;
+  --sp-xs:2px;
+  --sp-sm:6px;
+  --sp-md:10px;
+  --sp-lg:20px;
+  --radius-sm:4px;
+  --radius-md:8px;
+  --radius-lg:15px;
+  /*--shadow-sm:;
+  --shadow-md:;*/
+  /*--transition-rapida
+  --transition-normal*/
+}
+
+[data-theme="dark"]{
+  --color-primario: #222;
+  --color-secundario: #446;
+  --color-fondo: #224;
+  --color-superficie: #668;
+  --color-texto: #ddd;
+  --color-texto-suave: #aaa;
+  --color-borde: #bbb;
+  --color-acento: #fff;
+  --fs-xs:11px;
+  --fs-sm:14px;
+  --fs-base:16px;
+  --fs-xl:22px;
+  --fs-2xl:28px;
+  --sp-xs:2px;
+  --sp-sm:6px;
+  --sp-md:10px;
+  --sp-lg:20px;
+  --radius-sm:4px;
+  --radius-md:8px;
+  --radius-lg:15px;
+  /*--shadow-sm:;
+  --shadow-md:;*/
+  /*--transition-rapida
+  --transition-normal*/
+}
