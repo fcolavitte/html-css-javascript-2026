@@ -1,3 +1,8 @@
+main{
+	display: flex;
+	flex-direction:column;
+}
+
 header{
 	display: flex;
 	justify-content: space-between;
@@ -45,9 +50,14 @@ li button:focus-visible{
 	background:#ffa;
 }
 
-article .contenedor-tarjetas{
+article.contenedor-tarjetas{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
 }
 
-section .tarjeta{
+section.tarjeta{
+	flex-basis: 30%;
+	background: #ccc;
 }
