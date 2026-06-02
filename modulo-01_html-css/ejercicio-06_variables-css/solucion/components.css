@@ -12,3 +12,26 @@
 #color-fondo::marker{color:var(--color-fondo);}
 #color-secundario::marker{color:var(--color-secundario);}
 #color-primario::marker{color:var(--color-primario);}
+
+#button-primario{
+	color:var(--color-texto);
+	box-shadow: var(--shadow-md);
+	background: var(--color-primario);
+	border-radius: var(--radius-lg);
+}
+#button-secundario{
+	color:var(--color-texto-suave);
+	box-shadow: var(--shadow-sm);
+	background: var(--color-secundario);
+	border-radius: var(--radius-md);
+}
+#button-outlined{
+	color:var(--color-texto);
+	background: var(--color-fondo);
+	border-radius: var(--radius-sm);
+}
+#button-deshabilitado{
+	color:var(--color-fondo);
+	background: var(--color-secundario);
+	border-radius: var(--radius-md);
+}
