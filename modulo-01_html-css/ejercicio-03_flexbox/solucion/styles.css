@@ -64,3 +64,9 @@ section.tarjeta{
 	flex-direction:column;
 	justify-content: space-between
 }
+
+section img{
+	background:red;
+	width:50%;
+	aspect-ratio:1;
+}
