@@ -1,3 +1,4 @@
+/* TP-CHECK: 1.5 | Colavitte-Facundo | mobile-first significa: primero diseñar todo para mobile (celular) ya que tiene el tamaño de ventana más chico, y las modificaciones se hacen con  media min-width para los siguientes tamaños. */
 
 :root {
   --color-primario: #bbb;

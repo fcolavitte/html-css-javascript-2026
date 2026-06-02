@@ -11,6 +11,7 @@
 		<header>
 			<img class="logo" src="https://e7.pngegg.com/pngimages/16/225/png-clipart-computer-icons-logo-freelancer-com-organization-icon-svg-success-miscellaneous-company.png" alt="logo del blog">
 			<div>
+				<!-- El menú funciona sin JS porque: el label ☰ está vinculado al checkbox por el par for id, al interactuar con el label se modifica el checkbox por más que no esté visible. Desde el CSS (.menu-toggle:checked) se muestra el menú si está checkeado, y sino se oculata. Para pantallas más anchas se oculta el label y se muestra el menú desplegado -->
 				<input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
 				<label for="menu-toggle" class="menu-icon">☰</label>
 				<nav class="nav-menu">
