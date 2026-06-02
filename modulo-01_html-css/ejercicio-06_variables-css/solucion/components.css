@@ -1,0 +1,14 @@
+
+
+#paleta-de-colores{
+  list-style-type: square;
+}
+
+#color-acento::marker{color:var(--color-acento);}
+#color-borde::marker{color:var(--color-borde);}
+#color-texto::marker{color:var(--color-texto);}
+#color-texto-suave::marker{color:var(--color-texto-suave);}
+#color-superficie::marker{color:var(--color-superficie);}
+#color-fondo::marker{color:var(--color-fondo);}
+#color-secundario::marker{color:var(--color-secundario);}
+#color-primario::marker{color:var(--color-primario);}
