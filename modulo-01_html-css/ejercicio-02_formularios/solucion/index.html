@@ -17,24 +17,24 @@
 				<fieldset>
 					<legend>Datos personales</legend>
 					<label for="nombre">Nombre:<span class="asterisco">*</span></label>
-					<input type="text" id="nombre" name="nombre" required aria-required="true" aria-describedby="name-error">
+					<input type="text" id="nombre" name="nombre" required aria-required="true" aria-describedby="name-error" tabindex="0">
 					<div id="name-error" class="error-message">Debe ingresar su nombre</div>
 					<br>
 					<br>
 					<label for="email">Email:<span class="asterisco">*</span></label>
-					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com" aria-describedby="mail-error">
+					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com" aria-describedby="mail-error" tabindex="0">
 					<div id="mail-error" class="error-message">Debe ingresar un correo válido</div>
 					<br>
 					<br>
 					<label for="telefono">Teléfono:<span class="asterisco">*</span></label>
-					<input type="tel" id="telefono" name="telefono" required aria-required="true" pattern="[0-9]{10,12}" placeholder="Sin guiones ni espacios" aria-describedby="tel-error">
+					<input type="tel" id="telefono" name="telefono" required aria-required="true" pattern="[0-9]{10,12}" placeholder="Sin guiones ni espacios" aria-describedby="tel-error" tabindex="0">
 					<div id="tel-error" class="error-message">Debe ingresar su teléfono sin guiones ni espacios</div>
 				</fieldset>
 				
 				<fieldset>
 					<legend>Mensaje</legend>
 					<label for="motivo">Motivo:</label>
-					<select id="motivo" name="motivo">
+					<select id="motivo" name="motivo" tabindex="0">
 						<option value="contacto" selected>Contacto</option>
 						<option value="colaborar">Colaborar</option>
 						<option value="modificación">Solicitud de modificación</option>
@@ -42,23 +42,23 @@
 					</select>
 					
 					<label for="mensaje">Mensaje:<span class="asterisco">*</span></label>
-					<textarea id="mensaje" name="mensaje" required aria-required="true"></textarea>
+					<textarea id="mensaje" name="mensaje" required aria-required="true" tabindex="0"></textarea>
 				</fieldset>
 				
 				<fieldset>
 					<legend>Tipo de consulta</legend>
-					<input type="checkbox" id="terminos" name="terminos" value="terminos" required aria-required="true">
+					<input type="checkbox" id="terminos" name="terminos" value="terminos" required aria-required="true" tabindex="0">
 					<label for="terminos">Acepto los términos<span class="asterisco">*</span></label>
 					
-					<input type="radio" id="tipoConsulta" name="tipo" value="consulta" checked>
+					<input type="radio" id="tipoConsulta" name="tipo" value="consulta" checked tabindex="0">
 					<label for="tipoConsulta">Consulta</label>
 					
-					<input type="radio" id="tipoSugerencia" name="tipo" value="sugerencia" aria-describedby="terminos-error">
+					<input type="radio" id="tipoSugerencia" name="tipo" value="sugerencia" aria-describedby="terminos-error" tabindex="0">
 					<label for="tipoSugerencia">Sugerencia</label>
 					
 					<div id="terminos-error" class="error-message">Debe aceptar los términos y condiciones</div>
 				</fieldset>
-				<button type="submit">Enviar</button>
+				<button type="submit" tabindex="0">Enviar</button>
 			</form>
 		</main>
 		<footer>
