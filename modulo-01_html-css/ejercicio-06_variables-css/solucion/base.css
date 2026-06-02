@@ -4,6 +4,15 @@ body {
   color: var(--color-texto);
   transition: all 1s;
 }
+
 body *{
   transition: all 1s;
+}
+
+header{
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-secundario);
+  padding: var(--padding-md);
 }
