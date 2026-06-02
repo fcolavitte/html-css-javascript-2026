@@ -1,3 +1,14 @@
+
+body{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"main-content sidebar"
+	"quote quote"
+	"cards cards"
+	"footer footer";
+}
+
 header{
 	display: flex;
 	justify-content: space-between;
@@ -5,6 +16,7 @@ header{
 	top: 0;
 	background: var(--color-primario);
 	z-index: 2;
+	grid-area: header;
 }
 
 img.logo{
