@@ -1,4 +1,11 @@
 
+:root {
+  --color-primario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-fondo2: #4e91fc;
+  --color-texto: #028;
+}
+
 body{
 	display: grid;
 	grid-template-areas:
@@ -9,23 +16,37 @@ body{
 	"footer footer";
 	grid-template-columns: 2fr 1fr;
 	gap: 10px;
+	background: var(--color-fondo);
+	margin: 0;
 }
 
 header{grid-area: header;}
 
 article{
 	grid-area: main-content;
-	background:red
 }
 
 aside{
 	grid-area: sidebar;
-	background:blue
+	background: var(--color-fondo2);
 }
 
 q{
 	grid-area: quote;
-	background:red
+	background: var(--color-primario);
+	text-align: center;
+	padding: 20px;
+}
+
+.contenedor-cards{
+	grid-area: cards;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+footer{
+	grid-area: footer;
+	background: var(--color-primario);
 }
 
 header{
@@ -35,6 +56,8 @@ header{
 	top: 0;
 	background: var(--color-primario);
 	z-index: 2;
+	background: var(--color-primario);
+	padding: 10px;
 }
 
 img.logo{
@@ -46,4 +69,18 @@ ul.menu, nav{
 	display: flex;
 	gap: 20px;
 	list-style-type: none;
+}
+
+.tarjeta{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--color-fondo2);
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--color-texto);
 }
