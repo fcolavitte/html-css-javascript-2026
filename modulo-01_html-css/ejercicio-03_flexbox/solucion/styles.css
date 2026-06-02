@@ -60,4 +60,7 @@ article.contenedor-tarjetas{
 section.tarjeta{
 	flex-basis: 30%;
 	background: #ccc;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between
 }
