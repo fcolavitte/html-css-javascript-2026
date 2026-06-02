@@ -1,4 +1,6 @@
 
+@import url("animations.css");
+
 :root {
   --color-primario: #bbb;
   --color-fondo: #2e71cc;
@@ -79,10 +81,10 @@ ul.menu, nav{
 	display:flex;
 }
 .cita label{
-	position:relative;
+	position:absolute;
 	bottom:0;
 	left:0;
-	transform: translate(-100%,80%);
+	transform: translate(10px,-40%);
 	color: #22f;
 	width: 250px;
 }
@@ -90,6 +92,7 @@ ul.menu, nav{
 	position:relative;
 	top:0;
 	left:0;
+	width: 250px;
 }
 
 #carrusel-contenido{
@@ -97,8 +100,10 @@ ul.menu, nav{
 	justify-content:flex-start;
 	position:relative;
 	left:0;
-	/*transform:translateX(-580px);*/
-	/*transform:translateX(-1058px);*/
+	/*transform:translateX(-250px);*/
+	/*transform:translateX(-500px);*/
+	will-change: transform;
+	animation: carrusel 10s linear infinite;
 }
 
 #carrusel-marco{
