@@ -1,6 +1,15 @@
+
+:root {
+  --color-primario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-texto: #028;
+}
+
 main{
 	display: flex;
 	flex-direction:column;
+	background: var(--color-fondo);
+	color: var(--color-texto);
 }
 
 header{
@@ -8,7 +17,7 @@ header{
 	justify-content: space-between;
 	position: sticky;
 	top: 0;
-	background: #eee;
+	background: var(--color-primario);
 }
 
 img.logo{
@@ -24,13 +33,14 @@ ul.menu, nav{
 
 li, a{
 	text-decoration: none;
+	color: var(--color-texto);
 }
 
 .barra-filtros ul{
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
-	background: gray;
+	background: var(--color-primario);
 	padding:10px 0;
 }
 
@@ -60,7 +70,7 @@ article.contenedor-tarjetas{
 
 section.tarjeta{
 	flex-basis: 30%;
-	background: #ccc;
+	background: var(--color-primario);
 	display: flex;
 	flex-direction:column;
 	justify-content: space-between;
