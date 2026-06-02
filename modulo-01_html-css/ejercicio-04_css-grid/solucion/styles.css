@@ -1,3 +1,5 @@
+/* TP-CHECK: 1.4 | Colavitte-Facundo | grid-template-areas hace: permite definir áreas de formas diversas y con caracteristicas similares a row spam y column spam definiendo nombres a zonas y luego asignandoselas a etiquetas html en el CSS */
+
 
 :root {
   --color-primario: #bbb;
