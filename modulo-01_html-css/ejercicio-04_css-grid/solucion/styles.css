@@ -29,6 +29,7 @@ article{
 aside{
 	grid-area: sidebar;
 	background: var(--color-fondo2);
+	padding-left: 10px;
 }
 
 q{
@@ -88,4 +89,8 @@ a{
 
 #de-interes{
 	grid-column: span 2;
+}
+
+.asterisco{
+	color: red;
 }

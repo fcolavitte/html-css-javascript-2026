@@ -22,10 +22,25 @@
 		<!-- acá se posiciona article por su asignación de área (req-1.4.11) -->
 		<aside>
 			<h2>Sidebar</h2>
+			<h3>Artículos recientes</h3>
 			<ul>
-				<li><a href="">Artículos recientes</a></li>
-				<li><a href="">Newsletter form</a></li>
-				<li><a href="">Redes sociales</a></li>
+				<li><a href="">Pinturitas</a></li>
+				<li><a href="">La pantera rosa</a></li>
+				<li><a href="">Patoruzito</a></li>
+			</ul>
+			<h3>Newsletter form</h3>
+			<form action="/contacto.php" method="POST">
+				<fieldset>
+					<legend>Mandanos tu mail</legend>
+					<label for="email">Email:<span class="asterisco">*</span></label>
+					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com">
+					<button type="submit">Enviar</button>
+				</fieldset>
+			</form>
+			<h3>Redes sociales</h3>
+			<ul>
+				<li><a href="">Instagram</a></li>
+				<li><a href="">WhatsApp</a></li>
 			</ul>
 		</aside>
 		<q>La frase destacada de la semana</q>
@@ -55,7 +70,7 @@
 				<button>Ver más</button>
 			</section>
 			<section class="tarjeta" id="de-interes">
-				<img src="https://placehold.co/200" alt="imagen4">
+				<img src="https://placehold.co/400x200" alt="imagen4">
 				<h3>Pinturitas</h3>
 				<time datetime="2026-06-01">15 de agosto de 2021</time>
 				<label itemprop="categoria">Argentina</label>
