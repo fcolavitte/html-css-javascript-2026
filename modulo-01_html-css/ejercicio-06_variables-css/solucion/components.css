@@ -44,3 +44,19 @@
 	width: var(--width-tarjeta);
 	text-align: var(--text-align-tarjeta);
 }
+
+.form-default input, .form-default textarea, .form-default select{
+	box-shadow: var(--shadow-md);
+	border-color: var(--color-borde);
+}
+.form-focus input, .form-focus textarea, .form-focus select{
+	border-color: var(--color-acento);
+	border-width: var(--border-width-focus);
+	background: var(--color-secundario);
+}
+.form-error input, .form-error textarea, .form-error select{
+	background: var(--color-acento);
+}
+.form-diseable input, .form-diseable textarea, .form-diseable select{
+	background: var(--color-secundario);
+}

@@ -28,6 +28,7 @@
   --padding-md: 20px;
   --width-tarjeta: 250px;
   --text-align-tarjeta: center;
+  --border-width-focus: 5px;
 }
 
 [data-theme="dark"]{
@@ -38,7 +39,7 @@
   --color-texto: #ddd;
   --color-texto-suave: #aaa;
   --color-borde: #bbb;
-  --color-acento: #fff;
+  --color-acento: #f22;
   --fs-xs:11px;
   --fs-sm:14px;
   --fs-base:16px;
@@ -58,4 +59,5 @@
   --padding-md: 20px;
   --width-tarjeta: 250px;
   --text-align-tarjeta: center;
+  --border-width-focus: 5px;
 }
