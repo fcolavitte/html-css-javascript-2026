@@ -1,0 +1,19 @@
+header{
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: var(--color-primario);
+	z-index: 2;
+}
+
+img.logo{
+	width:100px;
+	height:auto;
+}
+
+ul.menu, nav{
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+}
