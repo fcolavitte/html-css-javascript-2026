@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>El impacto de la IA en el desarrollo de software</title>
 		<meta name="description" content="Informate sobre el impacto de la IA en el desarrollo de software.">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<header>
@@ -15,17 +16,16 @@
 			<form action="/contacto.php" method="POST">
 				<fieldset>
 					<legend>Datos personales</legend>
-					<label for="nombre">Nombre:</label>
-					<input type="text" id="nombre" name="nombre" required>
+					<label for="nombre">Nombre:<span class="asterisco">*</span></label>
+					<input type="text" id="nombre" name="nombre" required aria-required="true">
 					
 					
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required>
+					<label for="email">Email:<span class="asterisco">*</span></label>
+					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com">
 					
 					
-					<label for="telefono">Teléfono:</label>
-					<input type="tel" id="telefono" name="telefono">
-					<!-- Asumo que el telefono no es obligatorio para darle variedad al código y no poner todo como required -->
+					<label for="telefono">Teléfono:<span class="asterisco">*</span></label>
+					<input type="tel" id="telefono" name="telefono" required aria-required="true" pattern="[0-9]{10}">
 				</fieldset>
 				
 				<fieldset>
@@ -38,14 +38,14 @@
 						<option value="otros">otros</option>
 					</select>
 					
-					<label for="mensaje">Mensaje:</label>
-					<input type="textarea" id="mensaje" name="mensaje" required>
+					<label for="mensaje">Mensaje:<span class="asterisco">*</span></label>
+					<input type="textarea" id="mensaje" name="mensaje" required aria-required="true">
 				</fieldset>
 				
 				<fieldset>
 					<legend>Tipo de consulta</legend>
-					<input type="checkbox" id="terminos" name="terminos" value="terminos" required>
-					<label for="terminos">Acepto los términos</label>
+					<input type="checkbox" id="terminos" name="terminos" value="terminos" required aria-required="true">
+					<label for="terminos">Acepto los términos<span class="asterisco">*</span></label>
 					
 					<input type="radio" id="tipoConsulta" name="tipo" value="consulta" checked>
 					<label for="tipoConsulta">Consulta</label>
