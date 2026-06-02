@@ -41,21 +41,27 @@
 ### 3.1 — ¿Qué fue lo más difícil de este ejercicio y cómo lo resolviste?
 
 > ✏️ **Tu respuesta:**
+>
+> Los alert/notificación, no lo llegué a agregar.
 
 ### 3.2 — ¿Qué cambiarías si tuvieras que hacerlo de nuevo?
 
 > ✏️ **Tu respuesta:**
+>
+> Acomodaría mejor los elementos con grid o una tabla con títulos para que sea más legible y eligiría con más detalle los colores.
 
 ### 3.3 — ¿Qué alternativas consideraste y por qué las descartaste?
 
 > ✏️ **Tu respuesta:**
+>
+> Consideré agregar un tema adicional, pero no pude por cuestiones de tiempo
 
 ---
 
 ## Sección 4 — Declaración de uso de IA
 
 ```
-[ ] Resolví el ejercicio completamente sin ayuda de IA
+[x] Resolví el ejercicio completamente sin ayuda de IA
 [ ] Usé IA para entender algún concepto, pero escribí el código yo
 [ ] Usé IA para generar un borrador que luego modifiqué y entendí
 [ ] Usé IA extensamente y completé la reflexión para entender lo que hice
@@ -74,7 +80,7 @@ En una escala del 1 al 5, ¿cuánto entendés ahora el concepto central de este 
 ```
 [ ] 1 — Muy poco, necesito repasar
 [ ] 2 — Entiendo lo básico
-[ ] 3 — Lo entiendo bien
+[x] 3 — Lo entiendo bien
 [ ] 4 — Lo entiendo bien y puedo explicárselo a otro
 [ ] 5 — Podría dar una clase sobre esto
 ```
