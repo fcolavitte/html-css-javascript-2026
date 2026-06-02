@@ -60,3 +60,13 @@
 .form-diseable input, .form-diseable textarea, .form-diseable select{
 	background: var(--color-secundario);
 }
+
+.tag{
+	font-size: var(--fs-xs);
+	width: calc(var(--radius-lg)*2);
+	height: calc(var(--radius-lg)*2);
+	border-radius: var(--radius-lg);
+}
+.tag1{background: var(--color-primario);}
+.tag2{background: var(--color-superficie);}
+.tag3{background: var(--color-acento);}
