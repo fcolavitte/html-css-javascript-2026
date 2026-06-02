@@ -17,15 +17,18 @@
 				<fieldset>
 					<legend>Datos personales</legend>
 					<label for="nombre">Nombre:<span class="asterisco">*</span></label>
-					<input type="text" id="nombre" name="nombre" required aria-required="true">
-					
-					
+					<input type="text" id="nombre" name="nombre" required aria-required="true" aria-describedby="name-error">
+					<div id="name-error" class="error-message">Debe ingresar su nombre</div>
+					<br>
+					<br>
 					<label for="email">Email:<span class="asterisco">*</span></label>
-					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com">
-					
-					
+					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com" aria-describedby="mail-error">
+					<div id="mail-error" class="error-message">Debe ingresar un correo válido</div>
+					<br>
+					<br>
 					<label for="telefono">Teléfono:<span class="asterisco">*</span></label>
-					<input type="tel" id="telefono" name="telefono" required aria-required="true" pattern="[0-9]{10}" placeholder="Sin guiones ni espacios">
+					<input type="tel" id="telefono" name="telefono" required aria-required="true" pattern="[0-9]{10,12}" placeholder="Sin guiones ni espacios" aria-describedby="tel-error">
+					<div id="tel-error" class="error-message">Debe ingresar su teléfono sin guiones ni espacios</div>
 				</fieldset>
 				
 				<fieldset>
@@ -50,9 +53,10 @@
 					<input type="radio" id="tipoConsulta" name="tipo" value="consulta" checked>
 					<label for="tipoConsulta">Consulta</label>
 					
-					<input type="radio" id="tipoSugerencia" name="tipo" value="sugerencia">
+					<input type="radio" id="tipoSugerencia" name="tipo" value="sugerencia" aria-describedby="terminos-error">
 					<label for="tipoSugerencia">Sugerencia</label>
 					
+					<div id="terminos-error" class="error-message">Debe aceptar los términos y condiciones</div>
 				</fieldset>
 				<button type="submit">Enviar</button>
 			</form>

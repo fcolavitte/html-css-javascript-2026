@@ -24,3 +24,13 @@ input:hover {
 input:disabled {
 	background: #cccccc;
 }
+
+
+.error-message {
+  display: none;
+  color: #d93025;
+}
+
+input:invalid ~ .error-message {
+  display: block; 
+}
