@@ -11,3 +11,16 @@ input:invalid {
 input:valid {
   background-color: #ddffdd;
 }
+
+input:focus {
+  background-color: #ddddff;
+  outline: 5px solid red;
+}
+
+input:hover {
+  background-color: #bbccff;
+}
+
+input:disabled {
+	background: #cccccc;
+}
