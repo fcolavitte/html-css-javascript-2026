@@ -1,0 +1,73 @@
+
+:root {
+  --color-primario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-fondo2: #4e91fc;
+  --color-texto: #028;
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"hero img-producto"
+	"features features"
+	"testimonios testimonios"
+	"CTA CTA"
+	"footer footer";
+	margin: 0;
+	background: var(--color-fondo);
+}
+
+#hero{
+	grid-area: hero;
+	padding: 50px;
+	margin: 50px 0;
+}
+#img-producto{
+	grid-area: img-producto;
+	width:300px;
+	margin: 50px 0;
+}
+#features{
+	grid-area: features;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+	background: var(--color-fondo2);
+	padding: 30px 0;
+}
+
+header{
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: var(--color-primario);
+}
+header a{
+	text-decoration: none;
+	color: var(--color-texto);
+}
+
+img.logo{
+	width:100px;
+	height:auto;
+}
+
+ul.menu, nav{
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+}
+
+.tarjeta{
+	background: var(--color-fondo);
+	border-radius: 10px;
+	width: 250px;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+}
