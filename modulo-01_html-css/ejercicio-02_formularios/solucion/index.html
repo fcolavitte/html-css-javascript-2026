@@ -28,7 +28,7 @@
 				</fieldset>
 				
 				<fieldset>
-					<legend>Tipo de consulta</legend>
+					<legend>Mensaje</legend>
 					<label for="motivo">Motivo:</label>
 					<select id="motivo" name="motivo">
 						<option value="contacto" selected>Contacto</option>
@@ -40,6 +40,20 @@
 					<label for="mensaje">Mensaje:</label>
 					<input type="textarea" id="mensaje" name="mensaje">
 				</fieldset>
+				
+				<fieldset>
+					<legend>Tipo de consulta</legend>
+					<input type="checkbox" id="terminos" name="terminos" value="terminos">
+					<label for="terminos">Acepto los términos</label>
+					
+					<input type="radio" id="tipoConsulta" name="tipo" value="consulta" checked>
+					<label for="tipoConsulta">Consulta</label>
+					
+					<input type="radio" id="tipoSugerencia" name="tipo" value="sugerencia">
+					<label for="tipoSugerencia">Sugerencia</label>
+					
+				</fieldset>
+				<button type="submit">Enviar</button>
 			</form>
 		</main>
 		<footer>
