@@ -18,6 +18,7 @@ header{
 	position: sticky;
 	top: 0;
 	background: var(--color-primario);
+	z-index: 2;
 }
 
 img.logo{
@@ -75,6 +76,11 @@ section.tarjeta{
 	flex-direction:column;
 	justify-content: space-between;
 	align-items: center; 
+}
+
+section.tarjeta:hover{
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+	transform:translate(-10px,-10px);
 }
 
 section img{
