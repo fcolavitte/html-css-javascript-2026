@@ -1,0 +1,154 @@
+/* TP-CHECK: 1.5 | Colavitte-Facundo | mobile-first significa: primero diseñar todo para mobile (celular) ya que tiene el tamaño de ventana más chico, y las modificaciones se hacen con  media min-width para los siguientes tamaños. */
+
+:root {
+  --color-primario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-fondo2: #4e91fc;
+  --color-texto: #028;
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main-content"
+	"sidebar"
+	"quote"
+	"cards"
+	"footer";
+	gap: 10px;
+	background: var(--color-fondo);
+	margin: 0;
+}
+
+header{grid-area: header;}
+
+article{
+	grid-area: main-content;
+}
+
+aside{
+	grid-area: sidebar;
+	background: var(--color-fondo2);
+	padding-left: 10px;
+}
+
+q{
+	grid-area: quote;
+	background: var(--color-primario);
+	text-align: center;
+	padding: 20px;
+}
+
+.contenedor-cards{
+	grid-area: cards;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 10px;
+}
+
+footer{
+	grid-area: footer;
+	background: var(--color-primario);
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: var(--color-primario);
+	z-index: 2;
+	background: var(--color-primario);
+	padding: 10px;
+}
+
+img.logo{
+	width:100px;
+	height:auto;
+}
+
+ul.menu{
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+}
+
+.tarjeta{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--color-fondo2);
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--color-texto);
+}
+
+.asterisco{
+	color: red;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1{
+	font-size: 24px;
+}
+
+p{
+	line-height: 1.6;
+}
+
+
+.nav-menu {
+  display: none;
+}
+.menu-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+
+
+@media (min-width: 640px) {
+  .contenedor-cards{
+	grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .menu-icon{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+	grid-template-areas:
+	"header header"
+	"main-content sidebar"
+	"quote quote"
+	"cards cards"
+	"footer footer";
+	grid-template-columns: 2fr 1fr;
+  }
+  .contenedor-cards{
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  h1{
+	font-size: 48px;
+  }
+  p{
+	line-height: 1.5;
+	max-width: 65ch;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+  }
+}

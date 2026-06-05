@@ -1,0 +1,98 @@
+/* TP-CHECK: 1.4 | Colavitte-Facundo | grid-template-areas hace: permite definir áreas de formas diversas y con caracteristicas similares a row spam y column spam definiendo nombres a zonas y luego asignandoselas a etiquetas html en el CSS */
+
+
+:root {
+  --color-primario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-fondo2: #4e91fc;
+  --color-texto: #028;
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"main-content sidebar"
+	"quote quote"
+	"cards cards"
+	"footer footer";
+	grid-template-columns: 2fr 1fr;
+	gap: 10px;
+	background: var(--color-fondo);
+	margin: 0;
+}
+
+header{grid-area: header;}
+
+article{
+	grid-area: main-content;
+}
+
+aside{
+	grid-area: sidebar;
+	background: var(--color-fondo2);
+	padding-left: 10px;
+}
+
+q{
+	grid-area: quote;
+	background: var(--color-primario);
+	text-align: center;
+	padding: 20px;
+}
+
+.contenedor-cards{
+	grid-area: cards;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 10px;
+}
+
+footer{
+	grid-area: footer;
+	background: var(--color-primario);
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: var(--color-primario);
+	z-index: 2;
+	background: var(--color-primario);
+	padding: 10px;
+}
+
+img.logo{
+	width:100px;
+	height:auto;
+}
+
+ul.menu, nav{
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+}
+
+.tarjeta{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--color-fondo2);
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--color-texto);
+}
+
+#de-interes{
+	grid-column: span 2;
+}
+
+.asterisco{
+	color: red;
+}

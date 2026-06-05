@@ -1,0 +1,72 @@
+
+
+#paleta-de-colores{
+  list-style-type: square;
+}
+
+#color-acento::marker{color:var(--color-acento);}
+#color-borde::marker{color:var(--color-borde);}
+#color-texto::marker{color:var(--color-texto);}
+#color-texto-suave::marker{color:var(--color-texto-suave);}
+#color-superficie::marker{color:var(--color-superficie);}
+#color-fondo::marker{color:var(--color-fondo);}
+#color-secundario::marker{color:var(--color-secundario);}
+#color-primario::marker{color:var(--color-primario);}
+
+.button-primario{
+	color:var(--color-texto);
+	box-shadow: var(--shadow-md);
+	background: var(--color-primario);
+	border-radius: var(--radius-lg);
+}
+.button-secundario{
+	color:var(--color-texto-suave);
+	box-shadow: var(--shadow-sm);
+	background: var(--color-secundario);
+	border-radius: var(--radius-md);
+}
+.button-outlined{
+	color:var(--color-texto);
+	background: var(--color-fondo);
+	border-radius: var(--radius-sm);
+}
+.button-deshabilitado{
+	color:var(--color-fondo);
+	background: var(--color-secundario);
+	border-radius: var(--radius-md);
+}
+
+.tarjeta{
+	padding: var(--padding-md);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-md);
+	background: var(--color-secundario);
+	width: var(--width-tarjeta);
+	text-align: var(--text-align-tarjeta);
+}
+
+.form-default input, .form-default textarea, .form-default select{
+	box-shadow: var(--shadow-md);
+	border-color: var(--color-borde);
+}
+.form-focus input, .form-focus textarea, .form-focus select{
+	border-color: var(--color-acento);
+	border-width: var(--border-width-focus);
+	background: var(--color-secundario);
+}
+.form-error input, .form-error textarea, .form-error select{
+	background: var(--color-acento);
+}
+.form-diseable input, .form-diseable textarea, .form-diseable select{
+	background: var(--color-secundario);
+}
+
+.tag{
+	font-size: var(--fs-xs);
+	width: calc(var(--radius-lg)*2);
+	height: calc(var(--radius-lg)*2);
+	border-radius: var(--radius-lg);
+}
+.tag1{background: var(--color-primario);}
+.tag2{background: var(--color-superficie);}
+.tag3{background: var(--color-acento);}

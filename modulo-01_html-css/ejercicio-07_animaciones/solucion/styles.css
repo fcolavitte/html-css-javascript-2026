@@ -1,0 +1,116 @@
+
+@import url("animations.css");
+
+:root {
+  --color-primario: #bbb;
+  --color-fondo: #2e71cc;
+  --color-fondo2: #4e91fc;
+  --color-texto: #028;
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"hero img-producto"
+	"features features"
+	"testimonios testimonios"
+	"CTA CTA"
+	"footer footer";
+	margin: 0;
+	background: var(--color-fondo);
+}
+
+#hero{
+	grid-area: hero;
+	padding: 50px;
+	margin: 50px 0;
+}
+#img-producto{
+	grid-area: img-producto;
+	width:300px;
+	margin: 50px 0;
+}
+#features{
+	grid-area: features;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+	background: var(--color-fondo2);
+	padding: 30px 0;
+}
+#testimonios{
+	grid-area: testimonios;
+}
+header{
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: var(--color-primario);
+}
+header a{
+	text-decoration: none;
+	color: var(--color-texto);
+}
+
+img.logo{
+	width:100px;
+	height:auto;
+}
+
+ul.menu, nav{
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+}
+
+.tarjeta{
+	background: var(--color-fondo);
+	border-radius: 10px;
+	width: 250px;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.cita{
+	position:relative;
+	display:flex;
+}
+.cita label{
+	position:absolute;
+	bottom:0;
+	left:0;
+	transform: translate(10px,-40%);
+	color: #22f;
+	width: 250px;
+}
+.cita img{
+	position:relative;
+	top:0;
+	left:0;
+	width: 250px;
+}
+
+#carrusel-contenido{
+	display:flex;
+	justify-content:flex-start;
+	position:relative;
+	left:0;
+	/*transform:translateX(-250px);*/
+	/*transform:translateX(-500px);*/
+	will-change: transform;
+	animation: carrusel 10s linear infinite;
+}
+
+#carrusel-marco{
+	position:relative;
+	left:50%;
+	transform:translate(-50%, 0);
+	width:260px;
+	height:200px;
+	overflow: hidden;
+}

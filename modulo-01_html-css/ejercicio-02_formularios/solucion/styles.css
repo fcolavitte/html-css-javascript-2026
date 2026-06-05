@@ -1,0 +1,36 @@
+/* TP-CHECK: 1.2 | Colavitte-Facundo | un label explícito con for es importante porque: lo relaciona con el input asociado y facilita a los usuarios de lectores de pantalla y navegación por teclado */
+
+.asterisco{
+	color: red;
+}
+
+input:invalid {
+  background-color: #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+input:focus {
+  background-color: #ddddff;
+  outline: 5px solid red;
+}
+
+input:hover {
+  background-color: #bbccff;
+}
+
+input:disabled {
+	background: #cccccc;
+}
+
+
+.error-message {
+  display: none;
+  color: #d93025;
+}
+
+input:invalid ~ .error-message {
+  display: block; 
+}

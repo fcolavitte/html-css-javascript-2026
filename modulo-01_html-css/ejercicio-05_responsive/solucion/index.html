@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Magazines digitales</title>
+		<meta name="description" content="magazines digitales">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<img class="logo" src="https://e7.pngegg.com/pngimages/16/225/png-clipart-computer-icons-logo-freelancer-com-organization-icon-svg-success-miscellaneous-company.png" alt="logo del blog">
+			<div>
+				<!-- El menú funciona sin JS porque: el label ☰ está vinculado al checkbox por el par for id, al interactuar con el label se modifica el checkbox por más que no esté visible. Desde el CSS (.menu-toggle:checked) se muestra el menú si está checkeado, y sino se oculata. Para pantallas más anchas se oculta el label y se muestra el menú desplegado -->
+				<input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+				<label for="menu-toggle" class="menu-icon">☰</label>
+				<nav class="nav-menu">
+					<ul class="menu">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="recientes.html">Recientes</a></li>
+						<li><a href="proyectos.html">Proyectos</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<article>
+			<h1>Artículo Principal</h1>
+			<img src="https://placehold.co/600x400" alt="Foto destacada">
+		</article>
+		<aside>
+			<h2>Sidebar</h2>
+			<h3>Artículos recientes</h3>
+			<ul>
+				<li><a href="">Pinturitas</a></li>
+				<li><a href="">La pantera rosa</a></li>
+				<li><a href="">Patoruzito</a></li>
+			</ul>
+			<h3>Newsletter form</h3>
+			<form action="/contacto.php" method="POST">
+				<fieldset>
+					<legend>Mandanos tu mail</legend>
+					<label for="email">Email:<span class="asterisco">*</span></label>
+					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com">
+					<button type="submit">Enviar</button>
+				</fieldset>
+			</form>
+			<h3>Redes sociales</h3>
+			<ul>
+				<li><a href="">Instagram</a></li>
+				<li><a href="">WhatsApp</a></li>
+			</ul>
+		</aside>
+		<q>La frase destacada de la semana</q>
+		<div class="contenedor-cards">
+			<section class="tarjeta">
+				<img src="https://placehold.co/400" alt="imagen1">
+				<h3>Patoruzito</h3>
+				<time datetime="2026-06-01">1 de junio de 2026</time>
+				<label itemprop="categoria">Argentina</label>
+				<p>Todas las revistas de Patoruzito</p>
+				<button>Ver más</button>
+			</section>
+			<section class="tarjeta">
+				<img src="https://placehold.co/400" alt="imagen2">
+				<h3>Gaturro</h3>
+				<time datetime="2026-06-01">2 de julio de 2025</time>
+				<label itemprop="categoria">Argentina</label>
+				<p>Todas las revistas de Gaturro</p>
+				<button>Ver más</button>
+			</section>
+			<section class="tarjeta">
+				<img src="https://placehold.co/400" alt="imagen3">
+				<h3>La pantera rosa</h3>
+				<time datetime="2026-06-01">3 de junio de 2024</time>
+				<label itemprop="categoria">Argentina</label>
+				<p>Última edición de la Pantera Rosa</p>
+				<button>Ver más</button>
+			</section>
+			<section class="tarjeta">
+				<img src="https://placehold.co/400" alt="imagen4">
+				<h3>Pinturitas</h3>
+				<time datetime="2026-06-01">15 de agosto de 2021</time>
+				<label itemprop="categoria">Argentina</label>
+				<p>Revistas para colorear</p>
+				<button>Ver más</button>
+			</section>
+			<section class="tarjeta">
+				<img src="https://placehold.co/400" alt="imagen5">
+				<h3>Ajedrez</h3>
+				<time datetime="2026-06-01">14 de Enero de 2025</time>
+				<label itemprop="categoria">Perú</label>
+				<p>Aprende ajedrez en revistas</p>
+				<button>Ver más</button>
+			</section>
+			<section class="tarjeta">
+				<img src="https://placehold.co/400" alt="imagen6">
+				<h3>Recetario</h3>
+				<time datetime="2026-06-01">2 de Mayo de 2018</time>
+				<label itemprop="categoria">Colombia</label>
+				<p>100 Recetas de cocina</p>
+				<button>Ver más</button>
+			</section>
+		</div>
+		<footer>
+			<ul>
+				<li>Copyright: magazines digitales</li>
+				<li>
+					Enlaces secundarios:
+					<ul>
+						<li><a href="pag2.html">Novedades</a></li>
+						<li><a href="pag3.html">Contacto</a></li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

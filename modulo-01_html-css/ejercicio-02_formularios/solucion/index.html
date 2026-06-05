@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>El impacto de la IA en el desarrollo de software</title>
+		<meta name="description" content="Informate sobre el impacto de la IA en el desarrollo de software.">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<img src="resources/logo.png" alt="logo del blog">
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="recientes.html">Recientes</a></li>
+					<li><a href="cursos.html">Cursos</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Contactanos</h1>
+			<h2>Dejanos tu mensaje</h2>
+			<form action="/contacto.php" method="POST">
+				<fieldset>
+					<legend>Datos personales</legend>
+					<label for="nombre">Nombre:<span class="asterisco">*</span></label>
+					<input type="text" id="nombre" name="nombre" required aria-required="true" aria-describedby="name-error" tabindex="0">
+					<div id="name-error" class="error-message">Debe ingresar su nombre</div>
+					<br>
+					<br>
+					<label for="email">Email:<span class="asterisco">*</span></label>
+					<input type="email" id="email" name="email" required aria-required="true" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="mail@ejemplo.com" aria-describedby="mail-error" tabindex="0">
+					<div id="mail-error" class="error-message">Debe ingresar un correo válido</div>
+					<br>
+					<br>
+					<label for="telefono">Teléfono:<span class="asterisco">*</span></label>
+					<input type="tel" id="telefono" name="telefono" required aria-required="true" pattern="[0-9]{10,12}" placeholder="Sin guiones ni espacios" aria-describedby="tel-error" tabindex="0">
+					<div id="tel-error" class="error-message">Debe ingresar su teléfono sin guiones ni espacios</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Mensaje</legend>
+					<label for="motivo">Motivo:</label>
+					<select id="motivo" name="motivo" tabindex="0">
+						<option value="contacto" selected>Contacto</option>
+						<option value="colaborar">Colaborar</option>
+						<option value="modificación">Solicitud de modificación</option>
+						<option value="otros">otros</option>
+					</select>
+					
+					<label for="mensaje">Mensaje:<span class="asterisco">*</span></label>
+					<textarea id="mensaje" name="mensaje" required aria-required="true" tabindex="0"></textarea>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Tipo de consulta</legend>
+					<input type="checkbox" id="terminos" name="terminos" value="terminos" required aria-required="true" tabindex="0">
+					<label for="terminos">Acepto los términos<span class="asterisco">*</span></label>
+					
+					<input type="radio" id="tipoConsulta" name="tipo" value="consulta" checked tabindex="0">
+					<label for="tipoConsulta">Consulta</label>
+					
+					<input type="radio" id="tipoSugerencia" name="tipo" value="sugerencia" aria-describedby="terminos-error" tabindex="0">
+					<label for="tipoSugerencia">Sugerencia</label>
+					
+					<div id="terminos-error" class="error-message">Debe aceptar los términos y condiciones</div>
+				</fieldset>
+				<button type="submit" tabindex="0">Enviar</button>
+			</form>
+		</main>
+		<footer>
+			<ul>
+				<li>Copyright: información creada y reservada por tecnoBlog.</li>
+				<li>
+					Enlaces secundarios:
+					<ul>
+						<li><a href="pag2.html">Por qué el open source cambió la industria tech</a></li>
+						<li><a href="pag3.html">Historia y evolución de la World Wide Web</a></li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+		<!-- La diferencia entre aria-required y required es: que requiered es propio de HTML y está relacionado con el navegador en general. aria-required está relacionado con los asistentes como lectores de pantalla -->
+	</body>
+</html>
